@@ -1,0 +1,145 @@
+{
+  "planHash": "160c687a0e633bf93ed28b9e4d9ad78a342c767c95b526dab21b37725cda73fa",
+  "phase": "standalone",
+  "recordedAtUtc": "2026-11-01T00:03:15.6047764Z",
+  "retryCount": 0,
+  "resetBaseline": false,
+  "complete": true,
+  "result": {
+    "setupSucceeded": true,
+    "setupDurationMs": 0,
+    "setupFailureOutput": null,
+    "assertions": [
+      {
+        "name": "production-build",
+        "kind": "process",
+        "verificationMethod": "exit-code",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\n\u003E viajeconecta@1.0.0 build\n\u003E next build\n\n  \u25B2 Next.js 14.2.35\n  - Environments: .env\n\n   Creating an optimized production build ...\n \u2713 Compiled successfully\n   Linting and checking validity of types ...\n   Collecting page data ...\n   Generating static pages (0/32) ...\n   Generating static pages (8/32) \n   Generating static pages (16/32) \n   Generating static pages (24/32) \n \u2713 Generating static pages (32/32)\n   Finalizing page optimization ...\n   Collecting build traces ...\n\nRoute (app)                                             Size     First Load JS\n\u250C \u0192 /                                                   8.38 kB         145 kB\n\u251C \u0192 /_not-found                                         138 B          87.4 kB\n\u251C \u0192 /api/payment                                        0 B                0 B\n\u251C \u0192 /api/send-email                                     0 B                0 B\n\u251C \u0192 /carrito                                            4.85 kB         141 kB\n\u251C \u0192 /checkout                                           7.88 kB         144 kB\n\u251C \u0192 /compra-exitosa                                     3.64 kB         119 kB\n\u251C \u0192 /contacto                                           4.2 kB          114 kB\n\u251C \u0192 /politica-privacidad                                1.16 kB         111 kB\n\u251C \u0192 /politicas-reembolso                                1.16 kB         111 kB\n\u251C \u25CF /product/[slug]                                     6.81 kB         143 kB\n\u251C   \u251C /product/cocina-tradicional-en-cuetzalan\n\u251C   \u251C /product/cocina-tradicional-mixteca-en-huajuapan\n\u251C   \u251C /product/cocinar-en-teotitlan-del-valle\n\u251C   \u2514 [\u002B14 more paths]\n\u251C \u25CB /robots.txt                                         0 B                0 B\n\u251C \u0192 /rutas                                              3.66 kB         140 kB\n\u251C \u25CB /sitemap.xml                                        0 B                0 B\n\u2514 \u0192 /terminos-y-condiciones                             1.16 kB         111 kB\n\u002B First Load JS shared by all                           87.3 kB\n  \u251C chunks/117-751d6a4059513d2c.js                      31.7 kB\n  \u251C chunks/fd9d1056-b9b281d6c2728617.js                 53.6 kB\n  \u2514 other shared chunks (total)                         1.9 kB\n\n\n\u25CB  (Static)   prerendered as static content\n\u25CF  (SSG)      prerendered as static HTML (uses getStaticProps)\n\u0192  (Dynamic)  server-rendered on demand\n\n",
+        "durationMs": 28503
+      },
+      {
+        "name": "tests-pass",
+        "kind": "process",
+        "verificationMethod": "test-results",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\n\u003E viajeconecta@1.0.0 test\n\u003E node --test --test-reporter=spec tests/*.test.mjs\n\n\u2714 featured routes follow the curated presentation order (167.357457ms)\n\u2714 MXN prices use the same two-decimal format in both locales (48.3057ms)\n\u2139 tests 2\n\u2139 suites 0\n\u2139 pass 2\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 1095.408992\n",
+        "durationMs": 1556,
+        "testResults": {
+          "testFramework": "unknown",
+          "runnerDetectedFrom": "none",
+          "testsTotal": 0,
+          "testsPassed": 0,
+          "testsFailed": 0,
+          "testsSkipped": 0,
+          "parseFailed": true
+        }
+      },
+      {
+        "name": "home-route-200",
+        "kind": "http-probe",
+        "verificationMethod": "http-status",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": null,
+        "outputSample": "HTTP 200\n\u003C!DOCTYPE html\u003E\u003Chtml lang=\u0022es\u0022 class=\u0022__variable_c2a63e __variable_855f89 __variable_c512e9\u0022\u003E\u003Chead\u003E\u003Cmeta charSet=\u0022utf-8\u0022/\u003E\u003Cmeta name=\u0022viewport\u0022 content=\u0022width=device-width, initial-scale=1\u0022/\u003E\u003Clink rel=\u0022stylesheet\u0022 href=\u0022/_next/static/css/app/layout.css?v=1793491371892\u0022 data-precedence=\u0022next_static/css/app/layout.css\u0022/\u003E\u003Clink rel=\u0022preload\u0022 as=\u0022script\u0022 fetchPriority=\u0022low\u0022 href=\u0022/_next/static/chunks/webpack.js?v=1793491371892\u0022/\u003E\u003Cscript src=\u0022/_next/static/chunks/main-app.js?v=1793491371892\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/app-pages-internals.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/app/page.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/app/layout.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/app/not-found.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cmeta name=\u0022theme-color\u0022 content=\u0022#163B68\u0022/\u003E\u003Ctitle\u003EViajeConecta \u00B7 Saborea el M\u00E9xico aut\u00E9ntico\u003C/title\u003E\u003Cmeta name=\u0022description\u0022 content=\u0022Rutas e inmersiones gastron\u00F3micas con cocineras tradicionales, productores y mercados centenarios de M\u00E9xico. Saborea el M\u00E9xico aut\u00E9ntico.\u0022/\u003E\u003Cmeta name=\u0022author\u0022 content=\u0022ViajeConecta\u0022/\u003E\u003Cmeta name=\u0022keywords\u0022 content=\u0022rutas gastron\u00F3micas,M\u00E9xico,cocineras tradicionales,turismo gastron\u00F3mico,Oaxaca,Puebla,Yucat\u00E1n,ViajeConecta\u0022/\u003E\u003Cmeta name=\u0022creator\u0022 content=\u0022ViajeConecta\u0022/\u003E\u003Clink rel=\u0022canonical\u0022 href=\u0022https://viajeconecta.com\u0022/\u003E\u003Cmeta property=\u0022og:title\u0022 content=\u0022ViajeConecta \u00B7 Saborea el M\u00E9xico aut\u00E9ntico\u0022/\u003E\u003Cmeta property=\u0022og:description\u0022 content=\u0022Peque\u00F1as rutas para conocer M\u00E9xico desde su sabor. Cocineras tradicionales, mercados centenarios y caminos de caf\u00E9, mezcal y cacao.\u0022/\u003E\u003Cmeta property=\u0022og:url\u0022 content=\u0022https://viajeconecta.com\u0022/\u003E\u003Cmeta property=\u0022og:site_name\u0022 content=\u0022ViajeConecta\u0022/\u003E\u003Cmeta property=\u0022og:locale\u0022 content=\u0022es_MX\u0022/\u003E\u003Cmeta property=\u0022og:image\u0022 content=\u0022http://localhost:3001/images/hero-poster.jpg\u0022/\u003E\u003Cmeta property=\u0022og:image:width\u0022 content=\u00221536\u0022/\u003E\u003Cmeta property=\u0022og:image:height\u0022 content=\u0022864\u0022/\u003E\u003Cmeta property=\u0022og:image:alt\u0022 content=\u0022ViajeConecta\u0022/\u003E\u003Cmeta property=\u0022og:type\u0022 content=\u0022website\u0022/\u003E\u003Cmeta name=\u0022twitter:card\u0022 content=\u0022summary_large_image\u0022/\u003E\u003Cmeta name=\u0022twitter:title\u0022 content=\u0022ViajeConecta \u00B7 Saborea el M\u00E9xico aut\u00E9ntico\u0022/\u003E\u003Cmeta name=\u0022twitter:description\u0022 content=\u0022Peque\u00F1as rutas para conocer M\u00E9xico desde su sabor.\u0022/\u003E\u003Cmeta name=\u0022twitter:image\u0022 content=\u0022http://localhost:3001/images/hero-poster.jpg\u0022/\u003E\u003Clink rel=\u0022shortcut icon\u0022 href=\u0022/favicon.svg\u0022/\u003E\u003Clink rel=\u0022icon\u0022 href=\u0022/favicon.svg\u0022/\u003E\u003Clink rel=\u0022apple-touch-icon\u0022 href=\u0022/favicon.svg\u0022/\u003E\u003Cmeta name=\u0022next-size-adjust\u0022/\u003E\u003Cscript src=\u0022/_next/static/chunks/polyfills.js\u0022 noModule=\u0022\u0022\u003E\u003C/script\u003E\u003C/head\u003E\u003Cbody\u003E\u003Cdiv class=\u0022scroll-progress\u0022 aria-hidden=\u0022true\u0022\u003E\u003Cspan style=\u0022transform:scaleX(0)\u0022\u003E\u003C/span\u003E\u003C/div\u003E\u003Cheader class=\u0022site-header is-transparent  \u0022\u003E\u003Cdiv class=\u0022header-inner\u0022\u003E\u003Ca class=\u0022header-logo\u0022 aria-label=\u0022ViajeConecta\u0022 href=\u0022/\u0022\u003E\u003Cspan class=\u0022brand-logo brand-logo--light  \u0022 aria-label=\u0022ViajeConecta\u0022\u003E\u003Cspan class=\u0022brand-mark\u0022 aria-hidden=\u0022true\u0022\u003E\u003Csvg viewBox=\u00220 0 64 64\u0022 fill=\u0022none\u0022\u003E\u003Crect class=\u0022bm-bg\u0022 x=\u00222.5\u0022 y=\u00222.5\u0022 width=\u002259\u0022 height=\u002259\u0022 rx=\u002218\u0022\u003E\u003C/rect\u003E\u003Crect class=\u0022bm-inner\u0022 x=\u00226\u0022 y=\u00226\u0022 width=\u002252\u0022 height=\u002252\u0022 rx=\u002214.5\u0022\u003E\u003C/rect\u003E\u003Cpath class=\u0022bm-route\u0022 d=\u0022M12 51 C21 47 18.5 37.5 28 33.5 S42 35 47.5 20\u0022 stroke-dasharray=\u00220.1 6.2\u0022\u003E\u003C/path\u003E\u003Ccircle class=\u0022bm-ring\u0022 cx=\u002247.5\u0022 cy=\u002220\u0022 r=\u00227.2\u0022\u003E\u003C/circle\u003E\u003Ccircle class=\u0022bm-dot\u0022 cx=\u002247.5\u0022 cy=\u002220\u0022 r=\u00222.9\u0022\u003E\u003C/circle\u003E\u003Cg class=\u0022bm-star\u0022 stroke-linecap=\u0022round\u0022\u003E\u003Cpath d=\u0022M17 13.5v-5M17 24.5v-5M11.5 19h5M17.5 19h5\u0022\u003E\u003C/path\u003E\u003C/g\u003E\u003Ccircle class=\u0022bm-compass\u0022 cx=\u002217\u0022 cy=\u002219\u0022 r=\u00222.4\u0022\u003E\u003C/circle\u003E\u003Ccircle class=\u0022bm-speck\u0022 cx=\u002251\u0022 cy=\u002248\u0022 r=\u00221.7\u0022\u003E\u003C/circle\u003E\u003Ccircle class=\u0022bm-speck bm-speck--soft\u0022 cx=\u002245\u0022 cy=\u002251\u0022 r=\u00221.2\u0022\u003E\u003C/circle\u003E\u003C/svg\u003E\u003C/span\u003E\u003Cspan class=\u0022brand-type\u0022\u003E\u003Cspan class=\u0022brand-script\u0022\u003EViaje\u003C/span\u003E\u003Cspan class=\u0022brand-name\u0022\u003EConecta\u003C/span\u003E\u003Cspan class=\u0022brand-tagline\u0022\u003ERutas que conectan historias locales.\u003C/span\u003E\u003C/span\u003E\u003C/span\u003E\u003C/a\u003E\u003Cnav class=\u0022desktop-nav\u0022 aria-label=\u0022Ver men\u00FA\u0022\u003E\u003Ca class=\u0022nav-link \u0022 href=\u0022/#como\u0022\u003EC\u00F3mo funciona\u003C/a\u003E\u003Ca class=\u0022nav-link \u0022 href=\u0022/rutas\u0022\u003ERutas\u003C/a\u003E\u003Ca class=\u0022nav-link \u0022 href=\u0022/#historia\u0022\u003EHistoria\u003C/a\u003E\u003Ca class=\u0022nav-link \u0022 href=\u0022/contacto\u0022\u003ECon\n\u2026[truncated]",
+        "durationMs": 11402
+      },
+      {
+        "name": "catalog-route-200",
+        "kind": "http-probe",
+        "verificationMethod": "http-status",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": null,
+        "outputSample": "HTTP 200\n\u003C!DOCTYPE html\u003E\u003Chtml lang=\u0022es\u0022 class=\u0022__variable_c2a63e __variable_855f89 __variable_c512e9\u0022\u003E\u003Chead\u003E\u003Cmeta charSet=\u0022utf-8\u0022/\u003E\u003Cmeta name=\u0022viewport\u0022 content=\u0022width=device-width, initial-scale=1\u0022/\u003E\u003Clink rel=\u0022preload\u0022 as=\u0022image\u0022 imageSrcSet=\u0022/_next/image?url=%2Fimages%2Fcatalog-hero.jpg\u0026amp;w=360\u0026amp;q=75 360w, /_next/image?url=%2Fimages%2Fcatalog-hero.jpg\u0026amp;w=384\u0026amp;q=75 384w, /_next/image?url=%2Fimages%2Fcatalog-hero.jpg\u0026amp;w=480\u0026amp;q=75 480w, /_next/image?url=%2Fimages%2Fcatalog-hero.jpg\u0026amp;w=640\u0026amp;q=75 640w, /_next/image?url=%2Fimages%2Fcatalog-hero.jpg\u0026amp;w=768\u0026amp;q=75 768w, /_next/image?url=%2Fimages%2Fcatalog-hero.jpg\u0026amp;w=1024\u0026amp;q=75 1024w, /_next/image?url=%2Fimages%2Fcatalog-hero.jpg\u0026amp;w=1280\u0026amp;q=75 1280w, /_next/image?url=%2Fimages%2Fcatalog-hero.jpg\u0026amp;w=1536\u0026amp;q=75 1536w, /_next/image?url=%2Fimages%2Fcatalog-hero.jpg\u0026amp;w=1920\u0026amp;q=75 1920w\u0022 imageSizes=\u0022100vw\u0022 fetchPriority=\u0022high\u0022/\u003E\u003Clink rel=\u0022preload\u0022 as=\u0022image\u0022 imageSrcSet=\u0022/_next/image?url=%2Fimages%2Fproducts%2Fcocina-cuetzalan.webp\u0026amp;w=96\u0026amp;q=75 96w, /_next/image?url=%2Fimages%2Fproducts%2Fcocina-cuetzalan.webp\u0026amp;w=128\u0026amp;q=75 128w, /_next/image?url=%2Fimages%2Fproducts%2Fcocina-cuetzalan.webp\u0026amp;w=256\u0026amp;q=75 256w, /_next/image?url=%2Fimages%2Fproducts%2Fcocina-cuetzalan.webp\u0026amp;w=360\u0026amp;q=75 360w, /_next/image?url=%2Fimages%2Fproducts%2Fcocina-cuetzalan.webp\u0026amp;w=384\u0026amp;q=75 384w, /_next/image?url=%2Fimages%2Fproducts%2Fcocina-cuetzalan.webp\u0026amp;w=480\u0026amp;q=75 480w, /_next/image?url=%2Fimages%2Fproducts%2Fcocina-cuetzalan.webp\u0026amp;w=640\u0026amp;q=75 640w, /_next/image?url=%2Fimages%2Fproducts%2Fcocina-cuetzalan.webp\u0026amp;w=768\u0026amp;q=75 768w, /_next/image?url=%2Fimages%2Fproducts%2Fcocina-cuetzalan.webp\u0026amp;w=1024\u0026amp;q=75 1024w, /_next/image?url=%2Fimages%2Fproducts%2Fcocina-cuetzalan.webp\u0026amp;w=1280\u0026amp;q=75 1280w, /_next/image?url=%2Fimages%2Fproducts%2Fcocina-cuetzalan.webp\u0026amp;w=1536\u0026amp;q=75 1536w, /_next/image?url=%2Fimages%2Fproducts%2Fcocina-cuetzalan.webp\u0026amp;w=1920\u0026amp;q=75 1920w\u0022 imageSizes=\u0022(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw\u0022 fetchPriority=\u0022high\u0022/\u003E\u003Clink rel=\u0022preload\u0022 as=\u0022image\u0022 imageSrcSet=\u0022/_next/image?url=%2Fimages%2Fproducts%2Fcocina-huajuapan.webp\u0026amp;w=96\u0026amp;q=75 96w, /_next/image?url=%2Fimages%2Fproducts%2Fcocina-huajuapan.webp\u0026amp;w=128\u0026amp;q=75 128w, /_next/image?url=%2Fimages%2Fproducts%2Fcocina-huajuapan.webp\u0026amp;w=256\u0026amp;q=75 256w, /_next/image?url=%2Fimages%2Fproducts%2Fcocina-huajuapan.webp\u0026amp;w=360\u0026amp;q=75 360w, /_next/image?url=%2Fimages%2Fproducts%2Fcocina-huajuapan.webp\u0026amp;w=384\u0026amp;q=75 384w, /_next/image?url=%2Fimages%2Fproducts%2Fcocina-huajuapan.webp\u0026amp;w=480\u0026amp;q=75 480w, /_next/image?url=%2Fimages%2Fproducts%2Fcocina-huajuapan.webp\u0026amp;w=640\u0026amp;q=75 640w, /_next/image?url=%2Fimages%2Fproducts%2Fcocina-huajuapan.webp\u0026amp;w=768\u0026amp;q=75 768w, /_next/image?url=%2Fimages%2Fproducts%2Fcocina-huajuapan.webp\u0026amp;w=1024\u0026amp;q=75 1024w, /_next/image?url=%2Fimages%2Fproducts%2Fcocina-huajuapan.webp\u0026amp;w=1280\u0026amp;q=75 1280w, /_next/image?url=%2Fimages%2Fproducts%2Fcocina-huajuapan.webp\u0026amp;w=1536\u0026amp;q=75 1536w, /_next/image?url=%2Fimages%2Fproducts%2Fcocina-huajuapan.webp\u0026amp;w=1920\u0026amp;q=75 1920w\u0022 imageSizes=\u0022(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw\u0022 fetchPriority=\u0022high\u0022/\u003E\u003Clink rel=\u0022preload\u0022 as=\u0022image\u0022 imageSrcSet=\u0022/_next/image?url=%2Fimages%2Fproducts%2Fcocinar-teotitlan.webp\u0026amp;w=96\u0026amp;q=75 96w, /_next/image?url=%2Fimages%2Fproducts%2Fcocinar-teotitlan.webp\u0026amp;w=128\u0026amp;q=75 128w, /_next/image?url=%2Fimages%2Fproducts%2Fcocinar-teotitlan.webp\u0026amp;w=256\u0026amp;q=75 256w, /_next/image?url=%2Fimages%2Fproducts%2Fcocinar-teotitlan.webp\u0026amp;w=360\u0026amp;q=75 360w, /_next/image?url=%2Fimages%2Fproducts%2Fcocinar-teotitlan.webp\u0026amp;w=384\u0026amp;q=75 384w, /_next/image?url=%2Fimages%2Fproducts%2Fcocinar-teotitlan.webp\u0026amp;w=480\u0026amp;q=75 480w, /_next/image?url=%2Fimages%2Fproducts%2Fcocinar-teotitlan.webp\u0026amp;w=640\u0026amp;q=75 640w, /_next/image?url=%2Fimages%2Fproducts%2Fcocinar-teotitlan.webp\u0026amp;w=768\u0026amp;q=75 768w, /_next/image?url=%2Fimages%2Fproducts%2Fcocina\n\u2026[truncated]",
+        "durationMs": 10968
+      },
+      {
+        "name": "contact-route-200",
+        "kind": "http-probe",
+        "verificationMethod": "http-status",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": null,
+        "outputSample": "HTTP 200\n\u003C!DOCTYPE html\u003E\u003Chtml lang=\u0022es\u0022 class=\u0022__variable_c2a63e __variable_855f89 __variable_c512e9\u0022\u003E\u003Chead\u003E\u003Cmeta charSet=\u0022utf-8\u0022/\u003E\u003Cmeta name=\u0022viewport\u0022 content=\u0022width=device-width, initial-scale=1\u0022/\u003E\u003Clink rel=\u0022stylesheet\u0022 href=\u0022/_next/static/css/app/layout.css?v=1793491394901\u0022 data-precedence=\u0022next_static/css/app/layout.css\u0022/\u003E\u003Clink rel=\u0022preload\u0022 as=\u0022script\u0022 fetchPriority=\u0022low\u0022 href=\u0022/_next/static/chunks/webpack.js?v=1793491394901\u0022/\u003E\u003Cscript src=\u0022/_next/static/chunks/main-app.js?v=1793491394901\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/app-pages-internals.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/app/contacto/page.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/app/layout.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/app/not-found.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cmeta name=\u0022theme-color\u0022 content=\u0022#163B68\u0022/\u003E\u003Ctitle\u003EContacto \u00B7 ViajeConecta\u003C/title\u003E\u003Cmeta name=\u0022description\u0022 content=\u0022Escr\u00EDbenos para dise\u00F1ar una ruta gastron\u00F3mica a la medida o resolver dudas sobre tu reserva. Respondemos en menos de 24 horas.\u0022/\u003E\u003Cmeta name=\u0022author\u0022 content=\u0022ViajeConecta\u0022/\u003E\u003Cmeta name=\u0022keywords\u0022 content=\u0022rutas gastron\u00F3micas,M\u00E9xico,cocineras tradicionales,turismo gastron\u00F3mico,Oaxaca,Puebla,Yucat\u00E1n,ViajeConecta\u0022/\u003E\u003Cmeta name=\u0022creator\u0022 content=\u0022ViajeConecta\u0022/\u003E\u003Clink rel=\u0022canonical\u0022 href=\u0022https://viajeconecta.com/contacto\u0022/\u003E\u003Cmeta property=\u0022og:title\u0022 content=\u0022ViajeConecta \u00B7 Saborea el M\u00E9xico aut\u00E9ntico\u0022/\u003E\u003Cmeta property=\u0022og:description\u0022 content=\u0022Peque\u00F1as rutas para conocer M\u00E9xico desde su sabor. Cocineras tradicionales, mercados centenarios y caminos de caf\u00E9, mezcal y cacao.\u0022/\u003E\u003Cmeta property=\u0022og:url\u0022 content=\u0022https://viajeconecta.com\u0022/\u003E\u003Cmeta property=\u0022og:site_name\u0022 content=\u0022ViajeConecta\u0022/\u003E\u003Cmeta property=\u0022og:locale\u0022 content=\u0022es_MX\u0022/\u003E\u003Cmeta property=\u0022og:image\u0022 content=\u0022http://localhost:3001/images/hero-poster.jpg\u0022/\u003E\u003Cmeta property=\u0022og:image:width\u0022 content=\u00221536\u0022/\u003E\u003Cmeta property=\u0022og:image:height\u0022 content=\u0022864\u0022/\u003E\u003Cmeta property=\u0022og:image:alt\u0022 content=\u0022ViajeConecta\u0022/\u003E\u003Cmeta property=\u0022og:type\u0022 content=\u0022website\u0022/\u003E\u003Cmeta name=\u0022twitter:card\u0022 content=\u0022summary_large_image\u0022/\u003E\u003Cmeta name=\u0022twitter:title\u0022 content=\u0022ViajeConecta \u00B7 Saborea el M\u00E9xico aut\u00E9ntico\u0022/\u003E\u003Cmeta name=\u0022twitter:description\u0022 content=\u0022Peque\u00F1as rutas para conocer M\u00E9xico desde su sabor.\u0022/\u003E\u003Cmeta name=\u0022twitter:image\u0022 content=\u0022http://localhost:3001/images/hero-poster.jpg\u0022/\u003E\u003Clink rel=\u0022shortcut icon\u0022 href=\u0022/favicon.svg\u0022/\u003E\u003Clink rel=\u0022icon\u0022 href=\u0022/favicon.svg\u0022/\u003E\u003Clink rel=\u0022apple-touch-icon\u0022 href=\u0022/favicon.svg\u0022/\u003E\u003Cmeta name=\u0022next-size-adjust\u0022/\u003E\u003Cscript src=\u0022/_next/static/chunks/polyfills.js\u0022 noModule=\u0022\u0022\u003E\u003C/script\u003E\u003C/head\u003E\u003Cbody\u003E\u003Cdiv class=\u0022scroll-progress\u0022 aria-hidden=\u0022true\u0022\u003E\u003Cspan style=\u0022transform:scaleX(0)\u0022\u003E\u003C/span\u003E\u003C/div\u003E\u003Cheader class=\u0022site-header is-solid  \u0022\u003E\u003Cdiv class=\u0022header-inner\u0022\u003E\u003Ca class=\u0022header-logo\u0022 aria-label=\u0022ViajeConecta\u0022 href=\u0022/\u0022\u003E\u003Cspan class=\u0022brand-logo brand-logo--dark  \u0022 aria-label=\u0022ViajeConecta\u0022\u003E\u003Cspan class=\u0022brand-mark\u0022 aria-hidden=\u0022true\u0022\u003E\u003Csvg viewBox=\u00220 0 64 64\u0022 fill=\u0022none\u0022\u003E\u003Crect class=\u0022bm-bg\u0022 x=\u00222.5\u0022 y=\u00222.5\u0022 width=\u002259\u0022 height=\u002259\u0022 rx=\u002218\u0022\u003E\u003C/rect\u003E\u003Crect class=\u0022bm-inner\u0022 x=\u00226\u0022 y=\u00226\u0022 width=\u002252\u0022 height=\u002252\u0022 rx=\u002214.5\u0022\u003E\u003C/rect\u003E\u003Cpath class=\u0022bm-route\u0022 d=\u0022M12 51 C21 47 18.5 37.5 28 33.5 S42 35 47.5 20\u0022 stroke-dasharray=\u00220.1 6.2\u0022\u003E\u003C/path\u003E\u003Ccircle class=\u0022bm-ring\u0022 cx=\u002247.5\u0022 cy=\u002220\u0022 r=\u00227.2\u0022\u003E\u003C/circle\u003E\u003Ccircle class=\u0022bm-dot\u0022 cx=\u002247.5\u0022 cy=\u002220\u0022 r=\u00222.9\u0022\u003E\u003C/circle\u003E\u003Cg class=\u0022bm-star\u0022 stroke-linecap=\u0022round\u0022\u003E\u003Cpath d=\u0022M17 13.5v-5M17 24.5v-5M11.5 19h5M17.5 19h5\u0022\u003E\u003C/path\u003E\u003C/g\u003E\u003Ccircle class=\u0022bm-compass\u0022 cx=\u002217\u0022 cy=\u002219\u0022 r=\u00222.4\u0022\u003E\u003C/circle\u003E\u003Ccircle class=\u0022bm-speck\u0022 cx=\u002251\u0022 cy=\u002248\u0022 r=\u00221.7\u0022\u003E\u003C/circle\u003E\u003Ccircle class=\u0022bm-speck bm-speck--soft\u0022 cx=\u002245\u0022 cy=\u002251\u0022 r=\u00221.2\u0022\u003E\u003C/circle\u003E\u003C/svg\u003E\u003C/span\u003E\u003Cspan class=\u0022brand-type\u0022\u003E\u003Cspan class=\u0022brand-script\u0022\u003EViaje\u003C/span\u003E\u003Cspan class=\u0022brand-name\u0022\u003EConecta\u003C/span\u003E\u003Cspan class=\u0022brand-tagline\u0022\u003ERutas que conectan historias locales.\u003C/span\u003E\u003C/span\u003E\u003C/span\u003E\u003C/a\u003E\u003Cnav class=\u0022desktop-nav\u0022 aria-label=\u0022Ver men\u00FA\u0022\u003E\u003Ca class=\u0022nav-link \u0022 href=\u0022/#como\u0022\u003EC\u00F3mo funciona\u003C/a\u003E\u003Ca class=\u0022nav-link \u0022 href=\u0022/rutas\u0022\u003ERutas\u003C/a\u003E\u003Ca class=\u0022nav-link \u0022 href=\u0022/#historia\u0022\u003EHistoria\u003C/a\u003E\u003Ca class=\u0022nav-link is-active\u0022 href=\u0022/contacto\u0022\u003EContacto\u003C/a\u003E\u003C\n\u2026[truncated]",
+        "durationMs": 10537
+      }
+    ],
+    "executions": [
+      {
+        "source": "production-build",
+        "resolvedExecutable": "/home/jesusri/.nvm/versions/node/v20.20.2/bin/npm",
+        "args": [
+          "run",
+          "build"
+        ],
+        "cwd": "/home/jesusri/Documentos/ReplicasNuevooo/viajeconecta",
+        "env": {},
+        "prependPath": [],
+        "platform": "linux"
+      },
+      {
+        "source": "tests-pass",
+        "resolvedExecutable": "/home/jesusri/.nvm/versions/node/v20.20.2/bin/npm",
+        "args": [
+          "test"
+        ],
+        "cwd": "/home/jesusri/Documentos/ReplicasNuevooo/viajeconecta",
+        "env": {},
+        "prependPath": [],
+        "platform": "linux"
+      },
+      {
+        "source": "home-route-200",
+        "resolvedExecutable": "/home/jesusri/.nvm/versions/node/v20.20.2/bin/npm",
+        "args": [
+          "run",
+          "dev"
+        ],
+        "cwd": "/home/jesusri/Documentos/ReplicasNuevooo/viajeconecta",
+        "env": {},
+        "prependPath": [],
+        "platform": "linux"
+      },
+      {
+        "source": "catalog-route-200",
+        "resolvedExecutable": "/home/jesusri/.nvm/versions/node/v20.20.2/bin/npm",
+        "args": [
+          "run",
+          "dev"
+        ],
+        "cwd": "/home/jesusri/Documentos/ReplicasNuevooo/viajeconecta",
+        "env": {},
+        "prependPath": [],
+        "platform": "linux"
+      },
+      {
+        "source": "contact-route-200",
+        "resolvedExecutable": "/home/jesusri/.nvm/versions/node/v20.20.2/bin/npm",
+        "args": [
+          "run",
+          "dev"
+        ],
+        "cwd": "/home/jesusri/Documentos/ReplicasNuevooo/viajeconecta",
+        "env": {},
+        "prependPath": [],
+        "platform": "linux"
+      }
+    ]
+  }
+}
