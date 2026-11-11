@@ -110,7 +110,7 @@ export function ProductDetailClient({ product }: { product: Product }) {
                   sizes="(max-width: 1024px) 100vw, 60vw"
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-jade-950/45 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-jade-950/45 via-transparent to-transparent" />
                 <div className="absolute inset-x-5 bottom-5 flex flex-wrap items-center gap-2">
                   <span className="rounded-full border border-cream-100/25 bg-jade-950/60 px-3.5 py-1.5 text-[0.58rem] font-bold uppercase tracking-[0.14em] text-cream-100 backdrop-blur-md">
                     {product.tag[locale]}

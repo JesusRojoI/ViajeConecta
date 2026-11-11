@@ -4,16 +4,18 @@ import { readFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import test from 'node:test';
-import ts from 'typescript';
+import { transformSync } from 'esbuild';
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
 function loadTypeScriptModule(relativePath) {
   const filePath = resolve(projectRoot, relativePath);
   const source = readFileSync(filePath, 'utf8');
-  const output = ts.transpile(source, {
-    module: ts.ModuleKind.CommonJS,
-    target: ts.ScriptTarget.ES2020,
+  const { code: output } = transformSync(source, {
+    loader: 'ts',
+    format: 'cjs',
+    target: 'es2020',
+    sourcefile: filePath,
   });
   const module = { exports: {} };
   const localRequire = createRequire(filePath);

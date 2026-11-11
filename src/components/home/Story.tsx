@@ -47,7 +47,7 @@ export function Story() {
                 sizes="(max-width: 1024px) 70vw, 420px"
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-jade-950/30 to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-jade-950/30 to-transparent" />
             </div>
             <div className="absolute -bottom-6 -left-8 w-[48%] rounded-2xl border-4 border-cream-200 shadow-soft">
               <div className="relative aspect-square overflow-hidden rounded-xl">

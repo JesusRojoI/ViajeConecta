@@ -43,7 +43,7 @@ export function CatalogClient() {
             sizes="100vw"
             className="object-cover opacity-35"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-jade-950/85 via-jade-950/75 to-jade-950" />
+          <div className="absolute inset-0 bg-linear-to-b from-jade-950/85 via-jade-950/75 to-jade-950" />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_82%_18%,rgba(234,182,76,0.18),transparent_36%)]" />
         </div>
         <div className="pointer-events-none absolute -right-24 top-10 h-72 w-72 rounded-full border border-cream-100/10" />
@@ -150,7 +150,7 @@ export function CatalogClient() {
             sizes="100vw"
             className="object-cover object-center opacity-30"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-jade-950/95 via-jade-900/85 to-jade-900/60" />
+          <div className="absolute inset-0 bg-linear-to-r from-jade-950/95 via-jade-900/85 to-jade-900/60" />
         </div>
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_15%_30%,rgba(200,90,58,0.2),transparent_40%),radial-gradient(circle_at_85%_75%,rgba(234,182,76,0.12),transparent_40%)]" />
         <div className="container-tgv relative grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">

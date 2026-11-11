@@ -3,8 +3,8 @@
 Replica funcional de una plataforma de rutas e inmersiones gastronómicas en México
 para la marca **ViajeConecta** (`viajeconecta.com`).
 
-Construida con **Next.js 14 (App Router)**, **React 18**, **TypeScript** y
-**Tailwind CSS**. Incluye catálogo de 17 experiencias, detalle de producto,
+Construida con **Next.js 16 (App Router)**, **React 19**, **TypeScript** y
+**Tailwind CSS 4**. Incluye catálogo de 17 experiencias, detalle de producto,
 carrito persistente, checkout con **Etomin**, correos transaccionales con
 **Resend**, contenido bilingüe español/inglés y páginas legales.
 
@@ -12,7 +12,7 @@ carrito persistente, checkout con **Etomin**, correos transaccionales con
 
 ## Requisitos
 
-- Node.js 18.17 o superior
+- Node.js 20.9 o superior
 - npm 9 o superior
 - Cuenta de Etomin (pagos) y/o Resend (correo) para producción
 
@@ -34,14 +34,12 @@ La aplicación queda disponible en **http://localhost:3001**.
 | `npm run build` | Compilación de producción |
 | `npm start` | Servidor de producción en el puerto 3001 |
 | `npm test` | Pruebas de orden del catálogo y formato monetario |
-| `npm run lint` | Linter de Next.js |
 | `npm run email:test` | Diagnóstico del proveedor de correo (ver sección Correo) |
 
-> `npm run dev` arranca con `scripts/dev.mjs`. Si el puerto 3001 está libre,
-> limpia `.next` (para no reutilizar artefactos de `next build`) y luego inicia
-> Next. Si ya hay un servidor en ese puerto, no lo interrumpe ni borra `.next`:
-> solo avisa y termina. Para compilar en producción detén antes el servidor de
-> desarrollo, de modo que ambos procesos no escriban en `.next` a la vez.
+> `npm run dev` arranca con `scripts/dev.mjs`. Si ya hay un servidor en el
+> puerto 3001, no lo interrumpe: solo avisa y termina. Next.js 16 separa la
+> salida de desarrollo (`.next/dev`) de la de producción (`.next`), por lo que
+> `npm run dev` y `npm run build` pueden ejecutarse sin sobrescribirse.
 
 ## Variables de entorno
 

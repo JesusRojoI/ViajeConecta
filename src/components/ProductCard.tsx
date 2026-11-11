@@ -40,7 +40,7 @@ export function ProductCard({
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
           className="product-image object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-jade-950/70 via-jade-950/5 to-transparent opacity-80" />
+        <div className="absolute inset-0 bg-linear-to-t from-jade-950/70 via-jade-950/5 to-transparent opacity-80" />
 
         <span className="absolute left-4 top-4 rounded-full border border-cream-100/25 bg-jade-950/55 px-3 py-1.5 text-[0.58rem] font-bold uppercase tracking-[0.16em] text-cream-100 backdrop-blur-md">
           {product.tag[locale]}

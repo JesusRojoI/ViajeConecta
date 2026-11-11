@@ -25,8 +25,9 @@ const bodyFont = DM_Sans({
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || 'https://viajeconecta.com';
 
-export function generateMetadata(): Metadata {
-  const isEnglish = cookies().get('NEXT_LOCALE')?.value === 'en';
+export async function generateMetadata(): Promise<Metadata> {
+  const cookieStore = await cookies();
+  const isEnglish = cookieStore.get('NEXT_LOCALE')?.value === 'en';
   const title = isEnglish
     ? 'ViajeConecta · Taste authentic Mexico'
     : 'ViajeConecta · Saborea el México auténtico';
@@ -97,18 +98,20 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const cookieLocale = cookies().get('NEXT_LOCALE')?.value;
+  const cookieStore = await cookies();
+  const cookieLocale = cookieStore.get('NEXT_LOCALE')?.value;
   const locale: Locale = cookieLocale === 'en' ? 'en' : 'es';
 
   return (
     <html
       lang={locale}
       className={`${displayFont.variable} ${bodyFont.variable}`}
+      data-scroll-behavior="smooth"
       suppressHydrationWarning
     >
       <body>

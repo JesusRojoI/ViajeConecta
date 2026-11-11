@@ -3,8 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   distDir: process.env.NEXT_DIST_DIR || '.next',
-  devIndicators: {
-    buildActivity: false,
+  turbopack: {
+    root: __dirname,
   },
   images: {
     formats: ['image/avif', 'image/webp'],

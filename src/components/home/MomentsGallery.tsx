@@ -59,7 +59,7 @@ export function MomentsGallery() {
                   sizes="(max-width: 768px) 50vw, 33vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-jade-950/85 via-jade-950/20 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-jade-950/85 via-jade-950/20 to-transparent" />
                 <span className="absolute left-4 top-4 font-display text-xl font-light text-cream-100/60">
                   0{index + 1}
                 </span>

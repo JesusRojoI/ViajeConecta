@@ -25,7 +25,7 @@ export function Hero() {
         >
           <source src="/images/viajeconecta-hero.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-jade-950/85 via-jade-950/55 to-jade-950/90" />
+        <div className="absolute inset-0 bg-linear-to-b from-jade-950/85 via-jade-950/55 to-jade-950/90" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_78%_22%,rgba(239,215,161,0.14),transparent_35%),radial-gradient(circle_at_15%_85%,rgba(184,101,66,0.16),transparent_38%)]" />
       </div>
 
@@ -101,7 +101,7 @@ export function Hero() {
                     sizes="340px"
                     className="object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-jade-950/50 to-transparent" />
+                  <div className="absolute inset-0 bg-linear-to-t from-jade-950/50 to-transparent" />
                 </div>
                 <p className="script mt-4 text-[1.65rem] leading-[1.1] text-maize-200">
                   {t('home.hero.noteText')}
